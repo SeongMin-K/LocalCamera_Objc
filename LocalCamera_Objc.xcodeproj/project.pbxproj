@@ -299,6 +299,7 @@
 				DEVELOPMENT_TEAM = BR8CN8N4Y6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LocalCamera_Objc/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera permissions for preview";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -326,6 +327,7 @@
 				DEVELOPMENT_TEAM = BR8CN8N4Y6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LocalCamera_Objc/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera permissions for preview";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
