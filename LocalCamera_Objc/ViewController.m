@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    AVCaptureSession *session = [[AVCaptureSession alloc]init];
+    session = [[AVCaptureSession alloc]init];
     session.sessionPreset = AVCaptureSessionPresetPhoto;
     
     AVCaptureDevice *backCamera = [AVCaptureDevice defaultDeviceWithDeviceType:AVCaptureDeviceTypeBuiltInWideAngleCamera mediaType:AVMediaTypeVideo position:AVCaptureDevicePositionBack];
@@ -46,7 +46,7 @@
     previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
     [preview.layer addSublayer:previewLayer];
     dispatch_async(dispatch_get_main_queue(), ^{
-        previewLayer.frame = preview.bounds;
+        previewLayer.frame = self.preview.bounds;
     });
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
