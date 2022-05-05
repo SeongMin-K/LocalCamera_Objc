@@ -16,13 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yd6-tR-P5g">
-                                <rect key="frame" x="57" y="328" width="300" height="240"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="1AF-th-vZa"/>
-                                    <constraint firstAttribute="height" constant="240" id="lPg-eD-tZ7"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eej-2v-DAn">
                                 <rect key="frame" x="146.5" y="618" width="121.5" height="31"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -33,18 +26,25 @@
                                     <action selector="onCameraToggleBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aC3-HN-JLl"/>
                                 </connections>
                             </button>
+                            <mtkView contentMode="scaleToFill" colorPixelFormat="BGRA8Unorm" depthStencilPixelFormat="Depth32Float" translatesAutoresizingMaskIntoConstraints="NO" id="I5E-hF-OEt">
+                                <rect key="frame" x="57" y="328" width="300" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="5Yb-a8-tG7"/>
+                                    <constraint firstAttribute="height" constant="240" id="cWv-qU-wS9"/>
+                                </constraints>
+                            </mtkView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="yd6-tR-P5g" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OgS-il-31d"/>
+                            <constraint firstItem="I5E-hF-OEt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ujo-yO-2hu"/>
                             <constraint firstItem="eej-2v-DAn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XQh-x4-Yxb"/>
-                            <constraint firstItem="eej-2v-DAn" firstAttribute="top" secondItem="yd6-tR-P5g" secondAttribute="bottom" constant="50" id="Y39-s1-E6Y"/>
-                            <constraint firstItem="yd6-tR-P5g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yx6-ur-JkY"/>
+                            <constraint firstItem="eej-2v-DAn" firstAttribute="top" secondItem="I5E-hF-OEt" secondAttribute="bottom" constant="50" id="hvR-qR-B5g"/>
+                            <constraint firstItem="I5E-hF-OEt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lCk-sI-upm"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="preview" destination="yd6-tR-P5g" id="4Vi-f7-aqq"/>
+                        <outlet property="preview" destination="I5E-hF-OEt" id="Wg7-Np-flt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

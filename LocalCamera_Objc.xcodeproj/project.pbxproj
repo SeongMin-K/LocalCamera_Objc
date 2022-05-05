@@ -11,7 +11,6 @@
 		3E1E007F281FF12400236DF2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1E007E281FF12400236DF2 /* SceneDelegate.m */; };
 		3E1E0082281FF12400236DF2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1E0081281FF12400236DF2 /* ViewController.m */; };
 		3E1E0085281FF12400236DF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E1E0083281FF12400236DF2 /* Main.storyboard */; };
-		3E1E0088281FF12500236DF2 /* LocalCamera_Objc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3E1E0086281FF12500236DF2 /* LocalCamera_Objc.xcdatamodeld */; };
 		3E1E008A281FF12600236DF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E1E0089281FF12600236DF2 /* Assets.xcassets */; };
 		3E1E008D281FF12600236DF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E1E008B281FF12600236DF2 /* LaunchScreen.storyboard */; };
 		3E1E0090281FF12600236DF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1E008F281FF12600236DF2 /* main.m */; };
@@ -26,7 +25,6 @@
 		3E1E0080281FF12400236DF2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3E1E0081281FF12400236DF2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3E1E0084281FF12400236DF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3E1E0087281FF12500236DF2 /* LocalCamera_Objc.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LocalCamera_Objc.xcdatamodel; sourceTree = "<group>"; };
 		3E1E0089281FF12600236DF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E1E008C281FF12600236DF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E1E008E281FF12600236DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,7 +72,6 @@
 				3E1E008B281FF12600236DF2 /* LaunchScreen.storyboard */,
 				3E1E008E281FF12600236DF2 /* Info.plist */,
 				3E1E008F281FF12600236DF2 /* main.m */,
-				3E1E0086281FF12500236DF2 /* LocalCamera_Objc.xcdatamodeld */,
 			);
 			path = LocalCamera_Objc;
 			sourceTree = "<group>";
@@ -152,7 +149,6 @@
 				3E1E0090281FF12600236DF2 /* main.m in Sources */,
 				3E1E0082281FF12400236DF2 /* ViewController.m in Sources */,
 				3E1E007C281FF12400236DF2 /* AppDelegate.m in Sources */,
-				3E1E0088281FF12500236DF2 /* LocalCamera_Objc.xcdatamodeld in Sources */,
 				3E1E007F281FF12400236DF2 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,19 +363,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		3E1E0086281FF12500236DF2 /* LocalCamera_Objc.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				3E1E0087281FF12500236DF2 /* LocalCamera_Objc.xcdatamodel */,
-			);
-			currentVersion = 3E1E0087281FF12500236DF2 /* LocalCamera_Objc.xcdatamodel */;
-			path = LocalCamera_Objc.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 3E1E006F281FF12400236DF2 /* Project object */;
 }

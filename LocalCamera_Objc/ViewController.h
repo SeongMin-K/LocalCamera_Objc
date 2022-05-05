@@ -6,14 +6,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MetalKit/MetalKit.h>
 #import <AVFoundation/AVFoundation.h>
 
 @interface ViewController : UIViewController
 
 @property AVCaptureSession *session;
-@property AVCaptureDevice *inputDevice;
-@property AVCapturePhotoOutput *photoOutput;
-@property (weak, nonatomic) IBOutlet UIImageView *preview;
+@property (weak, nonatomic) IBOutlet MTKView *preview;
 
 - (IBAction)onCameraToggleBtnClicked:(UIButton *)sender;
 
