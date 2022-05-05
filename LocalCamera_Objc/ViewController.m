@@ -7,13 +7,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController () {
-    id<MTLDevice> _device;
-    id<MTLCommandQueue> _commandQueue;
-    id<MTLTexture> _texture;
-
-    CVMetalTextureCacheRef _textureCache;
-}
+@interface ViewController ()
 
 @end
 
@@ -27,11 +21,6 @@
     
     preview.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     preview.contentMode = UIViewContentModeScaleAspectFit;
-    
-    _device = MTLCreateSystemDefaultDevice();
-    preview.device = _device;
-    
-    CVMetalTextureCacheCreate(NULL, NULL, _device, NULL, &_textureCache);
     
     session = [[AVCaptureSession alloc] init];
     session.sessionPreset = AVCaptureSessionPresetPhoto;
@@ -66,17 +55,6 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
         [self.session startRunning];
     });
-}
-
-- (void)drawInMTKView:(MTKView *)view {
-    if (_texture) {
-        id<MTLCommandBuffer> commandBuffer = [_commandQueue commandBuffer];
-        
-        [commandBuffer presentDrawable:view.currentDrawable];
-        [commandBuffer commit];
-        
-        _texture = nil;
-    }
 }
 
 - (IBAction)onCameraToggleBtnClicked:(UIButton *)sender {
